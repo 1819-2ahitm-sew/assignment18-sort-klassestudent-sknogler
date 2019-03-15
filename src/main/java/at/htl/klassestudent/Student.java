@@ -1,16 +1,18 @@
 package at.htl.klassestudent;
 
-public class Student implements Comparable<Student> {
+public class Student extends Klasse implements Comparable<Student> {
 
+    int kat;
     private String vorname;
     private String nachname;
 
     public Student() {
     }
 
-    public Student(String vorname, String nachname) {
+    public Student(String vorname, String nachname, int kat) {
         this.vorname = vorname;
         this.nachname = nachname;
+        this.kat = kat;
     }
 
     public String getVorname() {
